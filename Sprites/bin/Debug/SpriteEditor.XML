@@ -4,45 +4,6 @@
         <name>SpriteEditor</name>
     </assembly>
     <members>
-        <member name="F:SpriteEditor.frmWizard.components">
-            <summary>
-            Required designer variable.
-            </summary>
-        </member>
-        <member name="M:SpriteEditor.frmWizard.Dispose(System.Boolean)">
-            <summary>
-            Clean up any resources being used.
-            </summary>
-            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
-        </member>
-        <member name="M:SpriteEditor.frmWizard.InitializeComponent">
-            <summary>
-            Required method for Designer support - do not modify
-            the contents of this method with the code editor.
-            </summary>
-        </member>
-        <member name="M:SpriteEditor.frmWizard.#ctor(System.Collections.Generic.IEnumerable{System.String},System.Collections.Generic.IEnumerable{System.String},System.Collections.Generic.IEnumerable{System.String})">
-            <summary>
-            Initializes and loads new instance of frmWizard
-            </summary>
-            <param name="possibleActions">List of valid actions</param>
-            <param name="possibleFlags">List of valid Flags</param>
-            <param name="possibleStates">List of valid States</param>
-        </member>
-        <member name="M:SpriteEditor.frmWizard.frmWizard_Load(System.Object,System.EventArgs)">
-            <summary>
-            Main Form > File > New selected. Event handler that initializes fields to send back.
-            </summary>
-            <param name="sender">Object that raised the event</param>
-            <param name="e">Event arguments.</param>
-        </member>
-        <member name="M:SpriteEditor.frmWizard.btnOK_Click(System.Object,System.EventArgs)">
-            <summary>
-            OK button event handler. Bundles checkbox results to send back to main form.
-            </summary>
-            <param name="sender">Object that raised the event</param>
-            <param name="e">Event arguments.</param>
-        </member>
         <member name="T:SpriteEditor.Extensions">
             <summary>
             Contains extensions for Treenodes (NodeSorter, MoveUp, MoveDown)
@@ -73,9 +34,77 @@
             <param name="otherObj">Obj2 to compare to Obj1.</param>
             <returns>-1 if Obj1 is larger, 0 if they are equal, 1 if Obj2 is larger</returns>
         </member>
-        <member name="M:SpriteEditor.Program.Main">
+        <member name="F:SpriteEditor.frmAbout.components">
             <summary>
-            The main entry point for the application.
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:SpriteEditor.frmAbout.Dispose(System.Boolean)">
+            <summary>
+            Clean up any resources being used.
+            </summary>
+            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        </member>
+        <member name="M:SpriteEditor.frmAbout.InitializeComponent">
+            <summary>
+            Required method for Designer support - do not modify
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="F:SpriteEditor.frmPreview.components">
+            <summary>
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:SpriteEditor.frmPreview.Dispose(System.Boolean)">
+            <summary>
+            Clean up any resources being used.
+            </summary>
+            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        </member>
+        <member name="M:SpriteEditor.frmPreview.InitializeComponent">
+            <summary>
+            Required method for Designer support - do not modify
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="M:SpriteEditor.frmWizard.#ctor(System.Collections.Generic.IEnumerable{System.String},System.Collections.Generic.IEnumerable{System.String},System.Collections.Generic.IEnumerable{System.String})">
+            <summary>
+            Initializes and loads new instance of frmWizard
+            </summary>
+            <param name="possibleActions">List of valid actions</param>
+            <param name="possibleFlags">List of valid Flags</param>
+            <param name="possibleStates">List of valid States</param>
+        </member>
+        <member name="M:SpriteEditor.frmWizard.frmWizard_Load(System.Object,System.EventArgs)">
+            <summary>
+            Main Form > File > New selected. Event handler that initializes fields to send back.
+            </summary>
+            <param name="sender">Object that raised the event</param>
+            <param name="e">Event arguments.</param>
+        </member>
+        <member name="M:SpriteEditor.frmWizard.btnOK_Click(System.Object,System.EventArgs)">
+            <summary>
+            OK button event handler. Bundles checkbox results to send back to main form.
+            </summary>
+            <param name="sender">Object that raised the event</param>
+            <param name="e">Event arguments.</param>
+        </member>
+        <member name="F:SpriteEditor.frmWizard.components">
+            <summary>
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:SpriteEditor.frmWizard.Dispose(System.Boolean)">
+            <summary>
+            Clean up any resources being used.
+            </summary>
+            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        </member>
+        <member name="M:SpriteEditor.frmWizard.InitializeComponent">
+            <summary>
+            Required method for Designer support - do not modify
+            the contents of this method with the code editor.
             </summary>
         </member>
         <member name="T:SpriteEditor.frmMain">
@@ -83,21 +112,39 @@
             
             </summary>
         </member>
-        <member name="F:SpriteEditor.frmMain.components">
+        <member name="T:SpriteEditor.frmMain.TreeNodeTag">
             <summary>
-            Required designer variable.
+            Enum that lists valid TreeNode.Tag types. Used to display correct Context Menus and for error checking.
             </summary>
         </member>
-        <member name="M:SpriteEditor.frmMain.Dispose(System.Boolean)">
+        <member name="F:SpriteEditor.frmMain.TreeNodeTag.None">
             <summary>
-            Clean up any resources being used.
+            Indicates an error has occurred.
             </summary>
-            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
         </member>
-        <member name="M:SpriteEditor.frmMain.InitializeComponent">
+        <member name="F:SpriteEditor.frmMain.TreeNodeTag.Value">
             <summary>
-            Required method for Designer support - do not modify
-            the contents of this method with the code editor.
+            Node is a Value.
+            </summary>
+        </member>
+        <member name="F:SpriteEditor.frmMain.TreeNodeTag.Parameter">
+            <summary>
+            Node is a Parameter
+            </summary>
+        </member>
+        <member name="F:SpriteEditor.frmMain.TreeNodeTag.Index">
+            <summary>
+            Node is an index and contains multiple entries.
+            </summary>
+        </member>
+        <member name="F:SpriteEditor.frmMain.TreeNodeTag.State">
+            <summary>
+            Node is a SPRITE_STATE
+            </summary>
+        </member>
+        <member name="F:SpriteEditor.frmMain.TreeNodeTag.File">
+            <summary>
+            Node is the root node / File node.
             </summary>
         </member>
         <member name="M:SpriteEditor.frmMain.#ctor">
@@ -128,7 +175,7 @@
         </member>
         <member name="M:SpriteEditor.frmMain.fileLoadMenu_Click(System.Object,System.EventArgs)">
             <summary>
-            File &gt; Load event handler that imports JSON-formatted file for usage.
+            File > Load event handler that imports JSON-formatted file for usage.
             </summary>
             <param name="sender">Object that raised the event</param>
             <param name="e">Event arguments.</param>
@@ -692,89 +739,162 @@
             <param name="sender">Object that raised the event</param>
             <param name="e">Event arguments.</param>
         </member>
-        <member name="T:SpriteEditor.frmMain.TreeNodeTag">
+        <member name="F:SpriteEditor.frmMain.components">
             <summary>
-            Enum that lists valid TreeNode.Tag types. Used to display correct Context Menus and for error checking.
+            Required designer variable.
             </summary>
         </member>
-        <member name="F:SpriteEditor.frmMain.TreeNodeTag.None">
+        <member name="M:SpriteEditor.frmMain.Dispose(System.Boolean)">
             <summary>
-            Indicates an error has occurred.
+            Clean up any resources being used.
+            </summary>
+            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        </member>
+        <member name="M:SpriteEditor.frmMain.InitializeComponent">
+            <summary>
+            Required method for Designer support - do not modify
+            the contents of this method with the code editor.
             </summary>
         </member>
-        <member name="F:SpriteEditor.frmMain.TreeNodeTag.Value">
+        <member name="M:SpriteEditor.Program.Main">
             <summary>
-            Node is a Value.
-            </summary>
-        </member>
-        <member name="F:SpriteEditor.frmMain.TreeNodeTag.Parameter">
-            <summary>
-            Node is a Parameter
-            </summary>
-        </member>
-        <member name="F:SpriteEditor.frmMain.TreeNodeTag.Index">
-            <summary>
-            Node is an index and contains multiple entries.
-            </summary>
-        </member>
-        <member name="F:SpriteEditor.frmMain.TreeNodeTag.State">
-            <summary>
-            Node is a SPRITE_STATE
-            </summary>
-        </member>
-        <member name="F:SpriteEditor.frmMain.TreeNodeTag.File">
-            <summary>
-            Node is the root node / File node.
+            The main entry point for the application.
             </summary>
         </member>
         <member name="T:SpriteEditor.Properties.Resources">
             <summary>
-              A strongly-typed resource class, for looking up localized strings, etc.
+              Uma classe de recurso de tipo de alta segurança, para pesquisar cadeias de caracteres localizadas etc.
             </summary>
         </member>
         <member name="P:SpriteEditor.Properties.Resources.ResourceManager">
             <summary>
-              Returns the cached ResourceManager instance used by this class.
+              Retorna a instância de ResourceManager armazenada em cache usada por essa classe.
             </summary>
         </member>
         <member name="P:SpriteEditor.Properties.Resources.Culture">
             <summary>
-              Overrides the current thread's CurrentUICulture property for all
-              resource lookups using this strongly typed resource class.
+              Substitui a propriedade CurrentUICulture do thread atual para todas as
+              pesquisas de recursos que usam essa classe de recurso de tipo de alta segurança.
             </summary>
         </member>
-        <member name="F:SpriteEditor.frmPreview.components">
+        <member name="P:SpriteEditor.Properties.Resources.check">
             <summary>
-            Required designer variable.
+              Consulta um recurso localizado do tipo System.Drawing.Bitmap.
             </summary>
         </member>
-        <member name="M:SpriteEditor.frmPreview.Dispose(System.Boolean)">
+        <member name="P:SpriteEditor.Properties.Resources.color">
             <summary>
-            Clean up any resources being used.
-            </summary>
-            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
-        </member>
-        <member name="M:SpriteEditor.frmPreview.InitializeComponent">
-            <summary>
-            Required method for Designer support - do not modify
-            the contents of this method with the code editor.
+              Consulta um recurso localizado do tipo System.Drawing.Bitmap.
             </summary>
         </member>
-        <member name="F:SpriteEditor.frmAbout.components">
+        <member name="P:SpriteEditor.Properties.Resources.delete">
             <summary>
-            Required designer variable.
+              Consulta um recurso localizado do tipo System.Drawing.Bitmap.
             </summary>
         </member>
-        <member name="M:SpriteEditor.frmAbout.Dispose(System.Boolean)">
+        <member name="P:SpriteEditor.Properties.Resources.error">
             <summary>
-            Clean up any resources being used.
+              Consulta um recurso localizado do tipo System.Drawing.Bitmap.
             </summary>
-            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
         </member>
-        <member name="M:SpriteEditor.frmAbout.InitializeComponent">
+        <member name="P:SpriteEditor.Properties.Resources.error24x24">
             <summary>
-            Required method for Designer support - do not modify
-            the contents of this method with the code editor.
+              Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+            </summary>
+        </member>
+        <member name="P:SpriteEditor.Properties.Resources.favicon">
+            <summary>
+              Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+            </summary>
+        </member>
+        <member name="P:SpriteEditor.Properties.Resources.FloppyDisk">
+            <summary>
+              Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+            </summary>
+        </member>
+        <member name="P:SpriteEditor.Properties.Resources.FolderOpen_32x32_72">
+            <summary>
+              Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+            </summary>
+        </member>
+        <member name="P:SpriteEditor.Properties.Resources.generic_picture">
+            <summary>
+              Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+            </summary>
+        </member>
+        <member name="P:SpriteEditor.Properties.Resources.help24x24">
+            <summary>
+              Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+            </summary>
+        </member>
+        <member name="P:SpriteEditor.Properties.Resources.hide">
+            <summary>
+              Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+            </summary>
+        </member>
+        <member name="P:SpriteEditor.Properties.Resources.NewDocuments_32x32">
+            <summary>
+              Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+            </summary>
+        </member>
+        <member name="P:SpriteEditor.Properties.Resources.Page">
+            <summary>
+              Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+            </summary>
+        </member>
+        <member name="P:SpriteEditor.Properties.Resources.plus">
+            <summary>
+              Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+            </summary>
+        </member>
+        <member name="P:SpriteEditor.Properties.Resources.refresh">
+            <summary>
+              Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+            </summary>
+        </member>
+        <member name="P:SpriteEditor.Properties.Resources.Rename">
+            <summary>
+              Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+            </summary>
+        </member>
+        <member name="P:SpriteEditor.Properties.Resources.search">
+            <summary>
+              Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+            </summary>
+        </member>
+        <member name="P:SpriteEditor.Properties.Resources.sprite3">
+            <summary>
+              Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+            </summary>
+        </member>
+        <member name="P:SpriteEditor.Properties.Resources.spriteeditor">
+            <summary>
+              Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+            </summary>
+        </member>
+        <member name="P:SpriteEditor.Properties.Resources.tree">
+            <summary>
+              Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+            </summary>
+        </member>
+        <member name="P:SpriteEditor.Properties.Resources.validate24x24">
+            <summary>
+              Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+            </summary>
+        </member>
+        <member name="P:SpriteEditor.Properties.Resources.XSDSchema_NameSpaceIcon">
+            <summary>
+              Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+            </summary>
+        </member>
+        <member name="P:SpriteEditor.Properties.Resources.ZoomIn">
+            <summary>
+              Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+            </summary>
+        </member>
+        <member name="P:SpriteEditor.Properties.Resources.ZoomOut">
+            <summary>
+              Consulta um recurso localizado do tipo System.Drawing.Bitmap.
             </summary>
         </member>
     </members>

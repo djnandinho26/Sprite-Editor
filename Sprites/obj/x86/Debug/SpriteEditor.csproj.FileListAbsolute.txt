@@ -45,3 +45,20 @@ C:\Users\E024320\Documents\Visual Studio 2010\Projects\SpriteEditor\Sprites\bin\
 C:\Users\E024320\Documents\Visual Studio 2010\Projects\SpriteEditor\Sprites\obj\x86\Debug\SpriteEditor.frmMain.resources
 C:\Users\E024320\Documents\Visual Studio 2010\Projects\SpriteEditor\Sprites\bin\Debug\Gif.Components.dll
 C:\Users\E024320\Documents\Visual Studio 2010\Projects\SpriteEditor\Sprites\bin\Debug\Gif.Components.pdb
+D:\Github\Sprite-Editor\Sprites\bin\Debug\SpriteEditor.exe.config
+D:\Github\Sprite-Editor\Sprites\bin\Debug\SpriteEditor.XML
+D:\Github\Sprite-Editor\Sprites\bin\Debug\SpriteEditor.exe
+D:\Github\Sprite-Editor\Sprites\bin\Debug\SpriteEditor.pdb
+D:\Github\Sprite-Editor\Sprites\bin\Debug\Newtonsoft.Json.dll
+D:\Github\Sprite-Editor\Sprites\obj\x86\Debug\SpriteEditor.csproj.AssemblyReference.cache
+D:\Github\Sprite-Editor\Sprites\obj\x86\Debug\SpriteEditor.csproj.SuggestedBindingRedirects.cache
+D:\Github\Sprite-Editor\Sprites\obj\x86\Debug\SpriteEditor.frmAbout.resources
+D:\Github\Sprite-Editor\Sprites\obj\x86\Debug\SpriteEditor.frmMain.resources
+D:\Github\Sprite-Editor\Sprites\obj\x86\Debug\SpriteEditor.frmPreview.resources
+D:\Github\Sprite-Editor\Sprites\obj\x86\Debug\SpriteEditor.frmWizard.resources
+D:\Github\Sprite-Editor\Sprites\obj\x86\Debug\SpriteEditor.Properties.Resources.resources
+D:\Github\Sprite-Editor\Sprites\obj\x86\Debug\SpriteEditor.csproj.GenerateResource.cache
+D:\Github\Sprite-Editor\Sprites\obj\x86\Debug\SpriteEditor.csproj.CoreCompileInputs.cache
+D:\Github\Sprite-Editor\Sprites\obj\x86\Debug\SpriteEditor.csproj.CopyComplete
+D:\Github\Sprite-Editor\Sprites\obj\x86\Debug\SpriteEditor.exe
+D:\Github\Sprite-Editor\Sprites\obj\x86\Debug\SpriteEditor.pdb
